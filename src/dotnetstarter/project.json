@@ -1,0 +1,37 @@
+{
+    "buildOptions": {
+        "copyToOutput": {
+            "include": [ "wwwroot" ]
+        },
+        "debugType": "portable",
+        "emitEntryPoint": true,
+        "preserveCompilationContext": true
+    },
+
+    "publishOptions": {
+        "include": [ "wwwroot" ],
+        "exclude": [ "**.user", "**.vspscc" ]
+    },
+
+    "dependencies": {
+        "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-rc2-final",
+        "Microsoft.AspNetCore.StaticFiles": "1.0.0-rc2-final",
+        "Microsoft.Extensions.Configuration.CommandLine": "1.0.0-rc2-final",
+        "Microsoft.NETCore.App": {
+            "type": "platform",
+            "version": "1.0.0-rc2-3002702"
+        }
+    },
+
+    "frameworks": {
+        "netcoreapp1.0": {
+            "imports": [
+                "portable-net45+wp80+win8+wpa81+dnxcore50"
+            ]
+        }
+    },
+
+    "scripts": { },
+
+    "version": "1.0.0"
+}
